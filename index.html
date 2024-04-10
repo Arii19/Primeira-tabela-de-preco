@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano mensal</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body{
+            background-color: #3FC1E0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .tabelapreco{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: min(1600px, 100%);
+        margin: auto;
+        }
+
+        .cartaopreco{
+            flex:1;
+            max-width: 330px;
+            background-color: #fff;
+            margin: 20px 10px;
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden;
+            color: #2d2d2d;
+            border-radius: 20px;
+            transition: .3s linear;
+             }
+
+        .cabecalho{
+            background-color:#00AEFF;
+            display: inline-block;
+            color:#fff;
+            padding: 12px 30px;
+            border-radius: 0 0 20px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: .4s linear;
+        }     
+
+        .cartaopreco:hover .cabecalho{
+            box-shadow: 0 0 2em 21em #00AEFF;
+        }
+       
+
+        .preco {
+            font-size: 70px;
+            color: #00AEFF;
+            margin: 40px 0;
+            transition: .2s linear;
+        }
+        
+        .preco sup, .preco span{
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+      
+        }
+
+        .cartaopreco li{
+            font-size: 16px;
+            padding: 10px 0;
+            text-transform: uppercase;
+         }
+
+         .order-btn{
+            display: inline-block;
+            margin-bottom: 40px;
+            margin-top: 80px;
+            border: 2px solid #00AEFF;
+            color: #00AEFF;
+            padding: 18px 40px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+         }
+
+            .order-btn:hover{
+                background-color: #00AEFF;
+                color: #fff;
+            }
+
+            @media screen and(max-widht:1100px) {
+                .cartaopreco{
+                    flex: 50%;
+                }
+                
+            }
+            ul{
+                margin: 2.6rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+             }
+    
+             ul li{
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 1rem 0;
+             }
+    </style>
+</head>
+<body>
+    <div class="tabelapreco">
+        <div class="cartaopreco">
+            <h3 class="cabecalho">Plano Standard</h3>
+            <div class="preco"><sup>R$</sup>97<span>/Mês</span></div>
+            <ul>
+                <li><strong>2</strong> usuários</li>
+                <li><strong>1</strong> usuário com agenda</li>
+                <li><strong>1</strong> usuário sem agenda</li>
+                <li><strong></strong> prescrição Eletrônica</li>
+            </ul>
+            <a href="https://app.gesclinica.com.br/cadastro?plano=Plano%20Standard&vigencia=mensal" class="order-btn">Assinar agora</a>
+    </div>
+    </div>
+    <div class="tabelapreco">
+        <div class="cartaopreco">
+            <h3 class="cabecalho">Plano Team</h3>
+            <div class="preco"><sup>R$</sup>147<span>/Mês</span></div>
+            <ul>
+                <li><strong>4</strong> usuários</li>
+                <li><strong>3</strong> usuário com agenda</li>
+                <li><strong>1</strong> usuário sem agenda</li>
+                <li><strong></strong> prescrição Eletrônica</li>
+            </ul>
+            <a href="https://app.gesclinica.com.br/cadastro?plano=Plano%20Team&vigencia=mensal" class="order-btn">Assinar agora</a>
+    </div>
+</div>
+
+<div class="tabelapreco">
+    <div class="cartaopreco">
+        <h3 class="cabecalho">Plano Premium</h3>
+        <div class="preco"><sup>R$</sup>197<span>/Mês</span></div>
+        <ul>
+            <li><strong>6</strong> usuários</li>
+            <li><strong>4</strong> usuário com agenda</li>
+            <li><strong>2</strong> usuário sem agenda</li>
+            <li><strong></strong> prescrição Eletrônica</li>
+        </ul>
+        <a href="https://app.gesclinica.com.br/cadastro?plano=Plano%20Premium&vigencia=mensal" class="order-btn">Assinar agora</a>
+</div>
+</div>
+
+<div class="tabelapreco">
+    <div class="cartaopreco">
+        <h3 class="cabecalho">Plano Corporate</h3>
+        <div class="preco"><sup>R$</sup>297<span>/Mês</span></div>
+        <ul>
+            <li><strong>10</strong> usuários</li>
+            <li><strong>8</strong> usuário com agenda</li>
+            <li><strong>2</strong> usuário sem agenda</li>
+            <li><strong></strong> prescrição Eletrônica</li>
+        </ul>
+        <a href="https://app.gesclinica.com.br/cadastro?plano=Plano%20Corporate&vigencia=mensal" class="order-btn">Assinar agora</a>
+</div>
+</div>
+</body>
+</html>
